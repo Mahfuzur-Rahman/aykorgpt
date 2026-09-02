@@ -376,8 +376,8 @@ def _make_session_token(user_id: str) -> str:
     """Compact HMAC-signed token: base64(user_id.exp).sig — no JWT dependency."""
     exp = int((datetime.utcnow() + timedelta(days=SESSION_TTL_DAYS)).timestamp())
     payload = f"{user_id}.{exp}"
-    sig = hmac.new(SESSION_SECRET.encode(), payload.encode(), hashlib.sha256).hexdigest()
     body = base64.urlsafe_b64encode(payload.encode()).decode().rstrip("=")
+    sig = hmac.new(SESSION_SECRET.encode(), body.encode(), hashlib.sha256).hexdigest()
     return f"{body}.{sig}"
 
 
