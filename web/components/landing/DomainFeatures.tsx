@@ -19,8 +19,8 @@ const features: FeatureDomain[] = [
     title: 'Income Tax',
     subtitle: 'Act 2023 & SROs',
     desc: 'Progressive slab rates, allowable deductions, 6th schedule investment rebates, company tax, and wealth surcharge.',
-    tags: ['Individual Slabs', 'Corporate Tax', 'Rebate 2024-25', 'Wealth Surcharge'],
-    stat: 'Updated for FY 24-25',
+    tags: ['Individual Slabs', 'Corporate Tax', 'Rebate 2026-27', 'Wealth Surcharge'],
+    stat: 'Updated for FY 26-27',
   },
   {
     icon: Receipt,

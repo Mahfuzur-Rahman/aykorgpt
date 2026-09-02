@@ -32,20 +32,20 @@ interface QueryScenario {
 const scenarios: QueryScenario[] = [
   {
     id: 'individual-slabs',
-    pillLabel: 'Individual Tax 2024-25',
+    pillLabel: 'Individual Tax 2026-27',
     category: 'Income Tax',
-    question: 'How is taxable income of ৳12,00,000 calculated for a male individual assessee in FY 2024-25?',
+    question: 'How is taxable income of ৳12,00,000 calculated for a male individual assessee in FY 2026-27?',
     answer: {
-      summary: 'Under the Income Tax Act 2023 & Finance Act 2024, your tax is calculated using progressive slab rates:',
+      summary: 'Under the Income Tax Act 2023 & Finance Act 2026, your tax is calculated using progressive slab rates:',
       breakdown: [
-        { label: 'First ৳3,50,000', rate: '0%', amount: '৳3,50,000', tax: '৳0' },
-        { label: 'Next ৳1,00,000', rate: '5%', amount: '৳1,00,000', tax: '৳5,000' },
-        { label: 'Next ৳4,00,000', rate: '10%', amount: '৳4,00,000', tax: '৳40,000' },
-        { label: 'Remaining ৳3,50,000', rate: '15%', amount: '৳3,50,000', tax: '৳52,500' },
+        { label: 'First ৳4,00,000', rate: '0%', amount: '৳4,00,000', tax: '৳0' },
+        { label: 'Next ৳3,00,000', rate: '10%', amount: '৳3,00,000', tax: '৳30,000' },
+        { label: 'Next ৳4,00,000', rate: '15%', amount: '৳4,00,000', tax: '৳60,000' },
+        { label: 'Remaining ৳1,00,000', rate: '20%', amount: '৳1,00,000', tax: '৳20,000' },
       ],
-      totalTax: '৳97,500',
-      effectiveRate: '8.125%',
-      citations: ['Income Tax Act 2023, Second Schedule', 'Finance Act 2024, Clause 48'],
+      totalTax: '৳1,10,000',
+      effectiveRate: '9.17%',
+      citations: ['Income Tax Act 2023, Second Schedule', 'Finance Act 2026, Clause 48'],
       note: 'Minimum tax of ৳5,000 applies for Dhaka & Chattogram City Corporation residents.'
     }
   },
@@ -80,7 +80,7 @@ const scenarios: QueryScenario[] = [
       ],
       totalTax: '৳50,000 (10%)',
       effectiveRate: '10.00%',
-      citations: ['Income Tax Act 2023, Section 52AA & Rule 64', 'NBR Withholding Tax Manual 2024'],
+      citations: ['Income Tax Act 2023, Section 52AA & Rule 64', 'NBR Withholding Tax Manual 2026'],
       note: 'TDS must be deposited to Govt. treasury via e-Challan within 2 weeks of deduction.'
     }
   }

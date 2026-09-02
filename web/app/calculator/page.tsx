@@ -86,7 +86,7 @@ export default function CalculatorPage() {
               Bangladesh Tax Calculator
             </h1>
             <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-              Aligned with <span className="font-semibold text-gray-700 dark:text-gray-300">Income Tax Act 2023</span>, Finance Act 2024 & NBR SROs.
+              Aligned with <span className="font-semibold text-gray-700 dark:text-gray-300">Income Tax Act 2023</span>, Finance Act 2026 & NBR SROs.
             </p>
           </div>
 
@@ -152,7 +152,7 @@ export default function CalculatorPage() {
                     <UserCheck size={18} className="text-[#0F6E56]" /> Taxpayer Assessment
                   </h2>
                   <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#0F6E56]/10 text-[#0F6E56] dark:bg-[#0F6E56]/20 dark:text-emerald-300">
-                    AY 2024–25
+                    AY 2026–27
                   </span>
                 </div>
 
@@ -207,10 +207,10 @@ export default function CalculatorPage() {
                     onChange={(e) => setCategory(e.target.value as TaxpayerCategory)}
                     className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 rounded-2xl text-sm font-medium text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#0F6E56] transition-all"
                   >
-                    <option value="general">General Taxpayer (Threshold: ৳3,50,000)</option>
-                    <option value="female_senior">Female Assessee & Seniors 65+ (Threshold: ৳4,00,000)</option>
-                    <option value="disabled">Physically Challenged Persons (Threshold: ৳4,75,000)</option>
-                    <option value="freedom_fighter">Gazetted War-Wounded Freedom Fighters (Threshold: ৳5,00,000)</option>
+                    <option value="general">General Taxpayer (Threshold: ৳4,00,000)</option>
+                    <option value="female_senior">Female Assessee & Seniors 65+ (Threshold: ৳4,50,000)</option>
+                    <option value="disabled">Physically Challenged Persons (Threshold: ৳5,25,000)</option>
+                    <option value="freedom_fighter">Gazetted War-Wounded Freedom Fighters (Threshold: ৳5,50,000)</option>
                   </select>
                 </div>
 
@@ -221,7 +221,7 @@ export default function CalculatorPage() {
                       Eligible Investment for Rebate (৳)
                     </label>
                     <span className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">
-                      15% Rebate
+                      10% Rebate
                     </span>
                   </div>
                   <div className="relative">

@@ -4,14 +4,14 @@ The application uses a Quick Login mechanism for local development that bypasses
 
 | Role | Email | Password | Database Check | Quota Limit |
 | :--- | :--- | :--- | :--- | :--- |
-| **Super Admin** | `admin@aykorgpt.com` | N/A (Quick Login) | ❌ Bypassed | ♾️ Unlimited |
-| **Super User** | `superuser@aykorgpt.com` | N/A (Quick Login) | ❌ Bypassed | ♾️ Unlimited |
-| **Test User** | `testuser@aykorgpt.com` | N/A (Quick Login) | ❌ Bypassed | ♾️ Unlimited |
+| **Super Admin** | `admin@aykorgpt.com` | `password123` | ✅ Verified | ♾️ Unlimited |
+| **Super User** | `superuser@aykorgpt.com` | `password123` | ✅ Verified | ♾️ Unlimited |
+| **Test User** | `testuser@aykorgpt.com` | `password123` | ✅ Verified | ♾️ Unlimited |
 
 ---
 
 ## How it works
 
-- **Fast Login**: Click any of the quick superuser login buttons at the bottom of the `/login` page.
-- **Mock Token**: The frontend injects a local mock token (e.g. `superuser-admin.0.mock_signature`).
-- **Unlimited Usage**: The backend API recognizes this mock signature and assigns the `superuser` plan, bypassing daily quota checks. This prevents the need to hardcode passwords in the API source code.
+These accounts have been manually seeded into the production Supabase database. They have the `superuser` plan, which the backend API recognizes and bypasses all daily quota limits for. 
+
+You can log in via the normal `/login` page using the credentials above.

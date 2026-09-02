@@ -20,20 +20,20 @@ export function calculateIncomeTax(
   location: LocationCategory = 'dhaka_chittagong'
 ): TaxCalculationResult {
   // 1. Threshold
-  let threshold = 350000
-  if (category === 'female_senior') threshold = 400000
-  else if (category === 'disabled') threshold = 475000
-  else if (category === 'freedom_fighter') threshold = 500000
+  let threshold = 400000
+  if (category === 'female_senior') threshold = 450000
+  else if (category === 'disabled') threshold = 525000
+  else if (category === 'freedom_fighter') threshold = 550000
 
   const taxableIncome = Math.max(0, grossIncome - threshold)
 
   // 2. Progressive Slabs
   const slabs = [
-    { limit: 100000, rate: 0.05, label: 'First ৳1,00,000' },
-    { limit: 400000, rate: 0.1, label: 'Next ৳4,00,000' },
-    { limit: 500000, rate: 0.15, label: 'Next ৳5,00,000' },
+    { limit: 300000, rate: 0.1, label: 'Next ৳3,00,000' },
+    { limit: 400000, rate: 0.15, label: 'Next ৳4,00,000' },
     { limit: 500000, rate: 0.2, label: 'Next ৳5,00,000' },
-    { limit: Infinity, rate: 0.25, label: 'Remaining balance' },
+    { limit: 2000000, rate: 0.25, label: 'Next ৳20,00,000' },
+    { limit: Infinity, rate: 0.3, label: 'Remaining balance' },
   ]
 
   let remaining = taxableIncome
@@ -60,7 +60,7 @@ export function calculateIncomeTax(
 
   // 3. Investment Rebate (15% of allowable investment)
   const maxAllowableInvestment = Math.min(investment, grossIncome * 0.2, 10000000)
-  const investmentRebate = Math.min(grossTax, maxAllowableInvestment * 0.15)
+  const investmentRebate = Math.min(grossTax, maxAllowableInvestment * 0.10)
   const netTaxBeforeMinimum = Math.max(0, grossTax - investmentRebate)
 
   // 4. Minimum Tax

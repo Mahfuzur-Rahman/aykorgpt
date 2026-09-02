@@ -8,13 +8,13 @@ const stats = [
     icon: Database,
     value: '50,000+',
     label: 'SROs & Gazettes Indexed',
-    description: 'Updated with latest 2024 NBR circulars',
+    description: 'Updated with latest 2026 NBR circulars',
   },
   {
     icon: Scale,
     value: 'Income Tax Act 2023',
     label: 'Complete Legal Mapping',
-    description: 'Cross-referenced with Finance Act 2024',
+    description: 'Cross-referenced with Finance Act 2026',
   },
   {
     icon: Zap,
