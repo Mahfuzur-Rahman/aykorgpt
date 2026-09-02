@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "AykorGPT",
+    "slug": "aykorgpt",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "aykorgpt",
+    "userInterfaceStyle": "automatic",
+    "ios": { "supportsTablet": true },
+    "android": { "adaptiveIcon": { "backgroundColor": "#16a34a" } },
+    "plugins": ["expo-router"]
+  }
+}

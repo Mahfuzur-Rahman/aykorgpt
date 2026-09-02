@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env
+.env
+.env.local
+.env*.local
+
+# Build
+.next/
+out/
+dist/
+build/
+
+# Vercel
+.vercel/
+
+# Misc
+.DS_Store
+*.log
+
+# Mobile (Expo)
+.expo/
